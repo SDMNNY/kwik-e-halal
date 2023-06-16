@@ -69,7 +69,7 @@ const Mutation = new GraphQLObjectType({
         }
 
         // If the username and password are valid, sign a new token
-        const token = jwt.sign({ id: user.id }, 'your-secret-key', { expiresIn: '1d' });
+        const token = jwt.sign({ id: user.id }, process.env.SECRET_KEY, { expiresIn: '1d' });
 
         // Return the user and the token
         return { user, token };
