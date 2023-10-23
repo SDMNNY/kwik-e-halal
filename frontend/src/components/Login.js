@@ -1,12 +1,8 @@
-import React from 'react';
+import React, { UseState, useState } from 'react';
 
-function Login() {
-  return (
-    <div>
-      <h1>Login Page</h1>
-      {/* This is where your login form will go */}
-    </div>
-  );
+function Login() { 
+  const [email, setEmail] = useState(''); 
+  
 }
 
 export default Login; // This makes the Login component importable in other files
