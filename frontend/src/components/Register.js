@@ -52,4 +52,4 @@ return (
 
 }
 
-export default Register; // This makes the Register component importable in other files
+export default Register; 

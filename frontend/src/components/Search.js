@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import RestaurantCard from './RestaurantCard'; 
 
-function Search() {
-  return (
-    <div>
-      <h1>Search Page</h1>
-      {/* This is where your search bar and list of search results will go */}
-    </div>
-  );
+function search() { 
+  const [searchQuery, setSearchQuery] = useState(''); 
+  const [restaurants, setRestaurants] = useState([]); 
+
+  
 }
 
-export default Search; // This makes the Search component importable in other files
+
+export default Search;
