@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Register() {
-  return (
-    <div>
-      <h1>Register Page</h1>
-      {/* This is where your registration form will go */}
-    </div>
-  );
+const [email, setEmail] = useState(''); 
+const [password, setPassword] = useState(''); 
+const [confirmPassword, setConfirmPassword] = useState(''); 
+
+
 }
 
 export default Register; // This makes the Register component importable in other files
