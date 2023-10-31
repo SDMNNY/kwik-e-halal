@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const mongoose = require('mongoose');
-const schema = require('./schema/schema');
+const schema = require('./schema');
+
 
 const app = express();
 
