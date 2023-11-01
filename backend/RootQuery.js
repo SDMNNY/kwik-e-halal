@@ -6,7 +6,7 @@ const { GraphQLObjectType, GraphQLID } = graphql;
 const UserType = require('./UserType');
 
 // Import the User mongoose model.
-const User = require('../models/User');
+const User = require('./User');
 
 // We're defining a new GraphQL ObjectType. Every GraphQL schema has a root query object.
 const RootQuery = new GraphQLObjectType({
